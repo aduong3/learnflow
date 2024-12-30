@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState } from 'react';
+import { createContext } from 'react';
 
 interface User {
     id: string;
@@ -6,9 +6,6 @@ interface User {
     isGuest: boolean;
 }
 
-interface UserProviderProps {
-    children: ReactNode;
-}
 
 export const UserContext = createContext<{
     user: User | null;
